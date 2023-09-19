@@ -3,25 +3,25 @@ import css from "./css/NavLinks.module.css";
 import { BiHomeAlt2 } from "react-icons/bi";
 import { AiOutlineLogin } from "react-icons/ai";
 import { IoCreateOutline } from "react-icons/io5";
-import NavLink from "react-router-dom"; // Import NavLink from react-router-dom
+import { Link } from "react-router-dom";
 
-function NavLinks() {
+function NavLinks(props) {
   return (
     <ul>
-      <li>
-        <NavLink to="/">
+      <li onClick={props.handleClose}>
+        <Link to="/">
           <BiHomeAlt2 /> Home
-        </NavLink>
+        </Link>
       </li>
       <li>
-        <NavLink to="/login">
+        <Link to="/login" onClick={props.handleClose}>
           <AiOutlineLogin /> Login
-        </NavLink>
+        </Link>
       </li>
       <li>
-        <NavLink to="signup">
+        <Link to="signup" onClick={props.handleClose}>
           <IoCreateOutline /> Sign Up
-        </NavLink>
+        </Link>
       </li>
     </ul>
   );

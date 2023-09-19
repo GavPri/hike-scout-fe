@@ -22,12 +22,11 @@ function Example() {
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            {" "}
-            <img src={logo} alt="logo" />{" "}
+            <img src={logo} alt="logo" />
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <NavLinks />
+          <NavLinks handleClose={handleClose} />
         </Offcanvas.Body>
       </Offcanvas>
     </>

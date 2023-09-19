@@ -37,9 +37,12 @@ li svg {
   width: 32px;
 }
 
-.NavLinks {
+a {
   text-decoration: none;
   color: #9dad7d;
+}
+a:hover {
+  color: whitesmoke;
 }
 
 @media screen and (max-width: 964px) {
@@ -56,6 +59,6 @@ li svg {
     align-items: center;
   }
   a {
-    width: 75%;
+    width: 100%;
   }
 }

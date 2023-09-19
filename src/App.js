@@ -3,7 +3,6 @@ import styles from "./App.module.css";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-
 function App() {
   return (
     <div className={styles.App}>

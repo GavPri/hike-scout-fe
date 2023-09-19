@@ -5,16 +5,16 @@ import NavOffCanvas from "./NavOffCanvas";
 import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <nav>
       {/* Logo */}
-      <a>
+      <Link to="/">
         <img src={logo} alt="logo" />
-      </a>
+      </Link>
       {/* Navigation Menu */}
       <div className={css.HideLinks}>
-        <NavLinks />
+        <NavLinks onHide={props.handleClose} />
       </div>
       {/* Offcanvase */}
       <div className={css.HideCanvas}>

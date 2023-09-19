@@ -1,0 +1,29 @@
+.OpenMenu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  height: 24px;
+  width: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.OpenMenu span {
+  background-color: #9dad7d;
+  height: 3px;
+  border-radius: 3px;
+}
+
+span:nth-child(1) {
+  width: 100%;
+}
+
+span:nth-child(2) {
+  width: 75%;
+}
+
+span:nth-child(3) {
+  width: 50%;
+}

@@ -1,0 +1,28 @@
+nav {
+  height: 75px;
+  width: 100vw;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+img {
+  height: 40px;
+}
+
+.HideCanvas {
+  display: none;
+}
+
+@media screen and (max-width: 964px) {
+  .HideLinks {
+    display: none;
+  }
+
+  .HideCanvas {
+    display: flex;
+  }
+}

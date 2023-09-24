@@ -33,7 +33,7 @@ function NavLinks(props) {
 
   const addPostIcon = (
     <li>
-      <Link to="/posts.create" onClick={props.handleClose}>
+      <Link to="/posts/create" onClick={props.handleClose}>
         <FaRegPlusSquare /> Add Post
       </Link>
     </li>

@@ -6,6 +6,7 @@ import SignUpForm from "./auth/SignUpForm";
 import "./api/AxiosDefaults";
 import LoginForm from "./auth/LoginForm";
 import axios from "axios";
+import PostCreateForm from "./components/pages/posts/PostCreateForm";
 
 
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" exact render={() => <h1>Home Page</h1>} />
             <Route path="/signup" exact render={() => <SignUpForm />} />
             <Route path="/login" exact render={() => <LoginForm />} />
+            <Route path="/posts/create" exact render={() => <PostCreateForm/>}/>
           </Switch>
         </div>
   );

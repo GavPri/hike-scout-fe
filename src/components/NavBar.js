@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import css from "./css/NavBar.module.css";
 import logo from "../assets/logo.png";
 import NavOffCanvas from "./NavOffCanvas";
 import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
+import { CurrentUserContext } from "../App";
 
 function NavBar(props) {
   return (
